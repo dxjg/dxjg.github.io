@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #FFF;
+}
+
+nav {
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.book {
+  border: 1px solid #FFF;
+  border-radius: 3px;
+  background-color: #B3E5FC;
+  display: block;
+
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.book > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.book:hover .book-title {
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 2em;
+  letter-spacing: 2px;
+
+  z-index: 1;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.book-title {
+  display: none;
+}
+
+@media only screen and (min-width: 511px) and (max-width: 765px) {
+  .book {
+    width: 50%;
+    padding-top: 50%;
+  }
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1020px) {
+  .book {
+    width: 33.3%;
+    padding-top: 33.3%;
+  }
+}
+
+@media only screen and (min-width: 1021px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .book {
+    width: 25%;
+    padding-top: 25%;
+  }
+}
