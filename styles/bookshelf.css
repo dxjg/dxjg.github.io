@@ -37,7 +37,7 @@ nav > ul {
   width: 100%;
 }
 
-.book:hover .book-title {
+.book-title {
   background-color: #FFF;
   display: flex;
   justify-content: center;
@@ -61,8 +61,34 @@ nav > ul {
   filter: alpha(opacity=50);
 }
 
-.book-title {
-  display: none;
+@media (hover) {
+  .book:hover .book-title {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 2em;
+    letter-spacing: 2px;
+
+    z-index: 1;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+  .book-title {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 511px) and (max-width: 765px) {
