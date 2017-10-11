@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  background-color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 765px;
+}
+
+p:first-of-type {
+  margin-top: 2em;
+}
+
+p {
+  padding: 0px 20px;
+  margin: 20px auto;
+  line-height: 1.5em;
+  max-width: 765px;
+}
+
+blockquote {
+  padding: 0px 60px;
+  margin: 20px auto;
+  line-height: 1.5em;
+  max-width: 765px;
+}
+
+p:last-of-type {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
