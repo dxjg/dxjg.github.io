@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   background-color: #FFF;
   color: #000;
@@ -12,6 +16,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px;
+  overflow: hidden;
 }
 
 nav {

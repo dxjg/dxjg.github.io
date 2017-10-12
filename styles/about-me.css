@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
 p {
   font-size: 3em;
-}
+
