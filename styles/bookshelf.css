@@ -56,7 +56,7 @@ a {
 .book > img {
   box-sizing: content-box;
   position: absolute;
-  top: 1px;
+  top: 0px;
   left: 0;
   width: 100%;
 /*
@@ -172,17 +172,10 @@ a {
   }
 }
 
-@media only screen and (min-width: 511px) and (max-width: 765px) {
+@media only screen and (min-width: 511px) and (max-width: 1020px) {
   .book {
     width: 50%;
     padding-top: 50%;
-  }
-}
-
-@media only screen and (min-width: 766px) and (max-width: 1020px) {
-  .book {
-    width: 33.3%;
-    padding-top: 33.3%;
   }
 }
 
