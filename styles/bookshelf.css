@@ -13,21 +13,13 @@
   height: 100vh;
 }
 
-.curtain-call {
-  -webkit-animation: fadeout 8s;
-     -moz-animation: fadeout 8s;
-      -ms-animation: fadeout 8s;
-       -o-animation: fadeout 8s;
-          animation: fadeout 8s;
-}
-
 body {
   font-family: "Oswald", sans-serif;
   background-color: #FFF;
 }
 
 nav {
-  width: 100%;
+  width: 100vw;
 }
 
 nav > ul {
