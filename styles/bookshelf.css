@@ -26,6 +26,7 @@ nav > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 a {
@@ -37,30 +38,22 @@ a {
   border: 0px solid #FFF;
   border-radius: 0px; */
   background-color: #FFF;
-  /* background-color: #B3E5FC; */
   display: block;
 
   position: relative;
-  width: 100%;
-  padding-top: 100%;
+  width: 100vw;
 }
 
 .book > img {
-  box-sizing: content-box;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-/*
-  -webkit-animation: fadein 3s;
-     -moz-animation: fadein 3s;
-      -ms-animation: fadein 3s;
-       -o-animation: fadein 3s;
-          animation: fadein 3s;
-*/
+  display: block;
+  width: 100vw;
 }
 
-.book-title {
+li.book > h1 {
+  display: none;
+}
+
+li.book:hover > h1 {
   background-color: #FFF;
   display: flex;
   justify-content: center;
@@ -84,90 +77,13 @@ a {
   filter: alpha(opacity=50);
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; z-index: -69 }
-}
-
-@-webkit-keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; z-index: -69 }
-}
-
-@-moz-keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; z-index: -69 }
-}
-
-@-ms-keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; z-index: -69 }
-}
-
-@-o-keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; z-index: -69 }
-}
-
-@media (hover) {
-  .book:hover .book-title {
-    background-color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 2em;
-    letter-spacing: 2px;
-
-    z-index: 1;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
-
-  .book-title {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 511px) and (max-width: 1020px) {
   .book {
-    width: 50%;
-    padding-top: 50%;
+    width: 50vw;
+  }
+
+  .book > img {
+    width: 50vw;
   }
 }
 
@@ -177,19 +93,7 @@ a {
     margin: 0 auto;
   }
 
-  .book {
-    width: 25%;
-    padding-top: 25%;
+  .book, .book > img {
+    width: 25vw;
   }
 }
-
-/*
-@media only screen and (min-width: 1531px) {
-  .book {
-    width: 12%;
-    padding-top: 12%;
-  }
-}
-*/
-
-5
